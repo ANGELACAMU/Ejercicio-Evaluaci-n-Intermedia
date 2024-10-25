@@ -9,4 +9,10 @@ function getRandomNumber(max) {
  return Math.ceil(Math.random() * max);
 }
 
+const numberSeleccion = (ev) => {
+    ev.preventDefault()
+    const numbers = input.value;
+    console.log (numbers);
+}
 
+button.addEventListener("click", numberSeleccion);
