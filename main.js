@@ -15,7 +15,19 @@ console.log (numberAleat);
 const numberSeleccion = (ev) => {
     ev.preventDefault()
     const numbers = input.value;
-    console.log (numbers);
-}
+    
+    if (numberAleat >100){
+        pista.innerHTML = "Demasiado alto";
+        }
+        else if (numberAleat <100){
+            pista.innerHTML = "Demasiado bajo";
+        }
+        else if (numberAleat === numberAleat){
+            pista.innerHTML = "Has ganado campeona!";
+        }
+       
+
+    }
+
 
 button.addEventListener("click", numberSeleccion);
