@@ -9,6 +9,9 @@ function getRandomNumber(max) {
  return Math.ceil(Math.random() * max);
 }
 
+const numberAleat = getRandomNumber(100);
+console.log (numberAleat);
+
 const numberSeleccion = (ev) => {
     ev.preventDefault()
     const numbers = input.value;
